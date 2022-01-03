@@ -1,17 +1,17 @@
-# Koshel Svetlana #
+# Koshel Svetlana
 
-### Contacts ###
+## Contacts 
 * **Location:** Minsk, Belarus
 * **E-mail:** svetlenkajas@gmail.com
 * **GitHub:** Svetlenkaja
 * **Discord:** Svetlenkaja#9249
 * **Telegram:** https://t.me/SvetlenkajaS
 
-### About Me
+## About Me
 I am study Front-end at RSSchool.
 
 
-### Skills
+## Skills
 * SQL/PLSQL
 * Delphi
 * Ruby/Ruby on Rails
@@ -19,7 +19,7 @@ I am study Front-end at RSSchool.
 * Git
 
 
-### Code Example
+## Code Example
 ```
 # BEGIN
 def compare_versions(ver1, ver2)
@@ -31,13 +31,13 @@ end
 # END
 ```
 
-### Education
-* University
+## Education
+* University: BSUIR
 * Courses:
     * Hexlet.io
     * It-academy
 
 
-### Languages
+## Languages
 * Russian (native)
 * English (A1)
