@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
 <body>
-<header class="container header">
-    <nav>
+<header>
+    <nav class="container header">
         <ul class="nav-list">
             <li>
                 <a class="nav-link" href="#contacts">Contacts</a>
@@ -47,13 +47,18 @@
                         Backend Java Developer
                     </div>
                 </div>
-                <div class="box-row texting">
-                    <div class="contacts-item">
-                        Minsk, Belarus
-                    </div>
-                    <div class="contacts-item">
-                        +375 29 69X XX X3
-                    </div>
+                <div class="texting">
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            Minsk, Belarus
+                        </li>
+                        <li class="contacts-item">
+                            +375 29 697 XX XX
+                        </li>
+                        <li class="contacts-item">
+                            <a class="link" href="mailto:svetlenkajas@gmail.com">Email</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -93,7 +98,7 @@
     # BEGIN
     def fizz_buzz(start, stop)
       str = ''
-      return str if stop < start
+      return str if stop &lt; start
 
       start.upto stop do |i|
         str = "#{str} " if i != start

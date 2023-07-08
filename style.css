@@ -1,9 +1,9 @@
 :root {
-    --main-color-one: #14274E;
-    --main-color-two: #173061;
-    --title: #5683c7;
-    --nav-link: #fff;
-    --box-color: #B0C4DEFF;
+    --main-color: #14274E;
+    --nav-color: #32508c;
+    --footer-color: #cedff3;
+    --link-color: #5683c7;
+    --nav-link-color: #fff;
 }
 
 * {
@@ -16,7 +16,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 main {
@@ -27,6 +27,7 @@ main {
 
 .container {
     max-width: 1440px;
+    margin: auto;
 }
 
 .section {
@@ -41,7 +42,16 @@ main {
 }
 
 .header {
-    background: var(--main-color-two);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: var(--nav-color);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 
 .footer {
@@ -49,7 +59,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
-    background: var(--box-color);
+    background: var(--footer-color);
     color: white;
 }
 
@@ -69,18 +79,11 @@ main {
     padding: 10px 20px;
 }
 
-.nav-list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-}
-
 .nav-link {
     padding: 0 15px;
     text-decoration: none;
     font-size: 20px;
-    color: var(--nav-link);
+    color: var(--nav-link-color);
 }
 
 .profile-logo {
@@ -92,20 +95,20 @@ main {
 }
 
 .odd-div-left {
-    background: var(--main-color-one);
+    background: var(--main-color);
 }
 
 .even-div-left {
-    background: var(--main-color-two);
+    background: var(--nav-color);
 }
 
 .even-div-right {
-    background: var(--box-color);
+    background: var(--footer-color);
 }
 
 .title {
     text-align: center;
-    color: var(--main-color-one);
+    color: var(--main-color);
     font-size: 36px;
     font-weight: 600;
     letter-spacing: 5px;
@@ -114,7 +117,7 @@ main {
 
 .sub-title {
     text-align: center;
-    color: var(--main-color-two);
+    color: var(--nav-color);
     line-height: 50px;
     font-size: 30px;
     font-weight: 400;
@@ -123,22 +126,24 @@ main {
 
 .texting {
     font-size: 18px;
-    color: var(--main-color-one);
+    color: var(--main-color);
 }
 
-.contact-link {
-    text-decoration: none;
-    padding: 0 20px;
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
 }
 
 .contacts-item {
     position: relative;
     flex: 35%;
-    margin: 20px 10%;
+    margin: 20px 15px;
     padding-left: 35px;
     font-size: 18px;
     font-weight: 500;
-    color: var(--main-color-two);
+    color: var(--nav-color);
 }
 
 .contacts-item:before {
@@ -160,9 +165,13 @@ main {
     background-image: url(./assets/svg/phone.svg);
 }
 
+.contacts-item:nth-child(3):before {
+    background-image: url(./assets/svg/email.svg);
+}
+
 .link {
     text-decoration: none;
-    color: var(--title);
+    color: var(--nav-color);
 }
 
 .link:hover {
@@ -174,7 +183,7 @@ main {
     padding: 0;
 }
 
-table {
-    width: 100%;
-    text-align: center;
+.contact-link {
+    text-decoration: none;
+    padding: 0 20px;
 }
