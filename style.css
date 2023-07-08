@@ -3,6 +3,7 @@
     --main-color-two: #173061;
     --title: #5683c7;
     --nav-link: #fff;
+    --box-color: #B0C4DEFF;
 }
 
 * {
@@ -39,6 +40,13 @@ main {
     justify-content: left;
 }
 
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
 .column-width {
     flex: 35%
 }
@@ -46,7 +54,6 @@ main {
 .div-left {
     width: 25%;
     text-align: right;
-    /*border: 1px solid red;*/
     padding: 20px;
     color: white;
 }
@@ -61,10 +68,8 @@ main {
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: var(--main-color-two);
+    background: var(--box-color);
+    color: white;
 }
 
 .nav-list {
@@ -98,7 +103,7 @@ main {
 }
 
 .even-div-right {
-    background: lightsteelblue;
+    background: var(--box-color);
 }
 
 .title {
@@ -107,6 +112,7 @@ main {
     font-size: 36px;
     font-weight: 600;
     letter-spacing: 5px;
+    margin: 20px;
 }
 
 .sub-title {
@@ -125,5 +131,53 @@ main {
 
 .contact-link {
     text-decoration: none;
-    color: var(--main-color-one);
+    padding: 0 20px;
+}
+
+.contacts-item {
+    position: relative;
+    flex: 35%;
+    margin: 20px 10%;
+    padding-left: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-color-two);
+}
+
+.contacts-item:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts-item:nth-child(1):before {
+    background-image: url(./assets/svg/location.svg);
+}
+
+.contacts-item:nth-child(2):before {
+    background-image: url(./assets/svg/phone.svg);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--title);
+}
+
+.link:hover {
+    color: blue;
+}
+
+.courses-list {
+    list-style: none;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    text-align: center;
 }

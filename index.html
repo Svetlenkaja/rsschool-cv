@@ -20,6 +20,12 @@
                 <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li>
+                <a class="nav-link"href="#code">Code example</a>
+            </li>
+            <li>
+                <a class="nav-link"href="#projects">Projects</a>
+            </li>
+            <li>
                 <a class="nav-link" href="#education">Education</a>
             </li>
             <li>
@@ -35,32 +41,27 @@
                 <img class="profile-logo" id="myfoto" src="./assets/img/foto.jpg" alt="profile-photo">
             </div>
             <div class="div-right">
-                <h1 class="title">SVIATLANA KOSHEL</h1>
-                <div class="sub-title">
-                    Backend Java Developer
+                <div>
+                    <h1 class="title">SVIATLANA KOSHEL</h1>
+                    <div class="sub-title">
+                        Backend Java Developer
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section" id="contacts">
-            <div class="div-left even-div-left">
-                <h2>Contacts</h2>
-            </div>
-            <div class="div-right even-div-right box-row texting">
-                <div class="column-width">
-                    <h3>Location</h3>
-                    Minsk, Belarus
-                </div>
-                <div class="column-width">
-                    <h3>Email</h3>
-                    <a class="contact-link" href="mailto:svetlenkajas@gmail.com">Svetlenkajas@gmail.com</a>
+                <div class="box-row texting">
+                    <div class="contacts-item">
+                        Minsk, Belarus
+                    </div>
+                    <div class="contacts-item">
+                        +375 29 69X XX X3
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section" id="about_me">
-            <div class="div-left odd-div-left">
+            <div class="div-left even-div-left">
                 <h2>About Me</h2>
             </div>
-            <div class="div-right texting">
+            <div class="div-right even-div-right texting">
                 I am backend developer. I like to learn programming and write beautiful code.
                 I want to learn technologies and tools for frontend development and in the future,
                 I want to become a full-stack developer.
@@ -68,12 +69,12 @@
             </div>
         </section>
         <section class="section" id="skills">
-            <div class="div-left even-div-left">
+            <div class="div-left odd-div-left">
                 <h2>Skills</h2>
             </div>
-            <div class="div-right even-div-right texting">
+            <div class="div-right texting">
                 <ul>
-                    <li>Java</li>
+                    <li>Java, Spring, Spring Boot, Spring Data, Hibernate, Jasper Report</li>
                     <li>SQL/PLSQL</li>
                     <li>Oracle database administration</li>
                     <li>Ruby/Ruby on Rails</li>
@@ -84,21 +85,46 @@
             </div>
         </section>
         <section class="section" id="code">
-            <div class="div-left odd-div-left">
+            <div class="div-left even-div-left">
                 <h2>Code example</h2>
             </div>
-            <div class="div-right">
+            <div class="div-right even-div-right texting">
                 <pre>
-        # BEGIN
-        def compare_versions(ver1, ver2)
-            array1 = ver1.split('.')
-            array2 = ver2.split('.')
-            index = array1[0].to_i == array2[0].to_i ? 1 : 0
-            array1[index].to_i <=> array2[index].to_i
+    # BEGIN
+    def fizz_buzz(start, stop)
+      str = ''
+      return str if stop < start
+
+      start.upto stop do |i|
+        str = "#{str} " if i != start
+        st = ''
+        if (i % 3 != 0) && (i % 5 != 0)
+          st = i.to_s
+        else
+          st = (i % 3).zero? ? 'Fizz' : ''
+          st += (i % 5).zero? ? 'Buzz' : ''
         end
-        # END
+        str = "#{str}#{st}"
+      end
+      str
+    end
+    # END
                 </pre>
             </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="div-left odd-div-left">
+                <h2>Projects</h2>
+            </div>
+            <div class="div-right texting">
+                <ul>
+                    <li>Design and creation of an automated system for operational accounting of works and services of the enterprise: ordering, cost calculation, documentary support for the execution of orders, preparation of final reporting. (Delphi, FastReport, Oracle, PLSQL)</a></li>
+                    <li>Design and creation of an IT department automation system based on ITSM practices. (Delphi, FastReport, Oracle, PLSQL)</li>
+                    <li><a class="link" href="https://github.com/Svetlenkaja/rails-project-lvl1/">Educational project "Form Generator".</a></li>
+                    <li><a class="link" href="https://github.com/Svetlenkaja/travel-agency">Educational project "Travel agency"</a> </li>
+                </ul>
+            </div>
+
         </section>
         <section class="section" id="education">
             <div class="div-left even-div-left">
@@ -107,16 +133,16 @@
             <div class="div-right even-div-right box-row texting">
                 <div class="column-width">
                     <h3>University</h3>
-                    BSUIR, Software Information Technology
+                    I graduated from the Belarusian State University of Informatics and Radioelectronics with a specialty software information technology.
                 </div>
                 <div class="column-width">
                     <h3>Courses</h3>
-                    <ul class="section-list texting">
-                        <li class="section-item">IT-Academy - Java Enterprise</li>
-                        <li class="section-item">BelSoft - Oracle 10g database administration</li>
-                        <li class="section-item">CompIT Technologies - PL/SQL</li>
-                        <li class="section-item">Hexlet.io - Ruby Developer</li>
-
+                    <ul class="texting courses-list">
+                        <li><a class="link" href="https://www.it-academy.by/course/java-developer/jd2-tekhnologii-razrabotki-enterprise-resheniy-na-java">
+                            Technologies for developing enterprise solutions in Java</a></li>
+                        <li><a class="link" href="https://ru.hexlet.io/programs/rails">Ruby Developer</a></li>
+                        <li>Develop PL/SQL Program Units</li>
+                        <li>Oracle 10g database administration</li>
                     </ul>
                 </div>
             </div>
@@ -133,10 +159,26 @@
     </div>
 </main>
 <footer class="footer">
-    <div class="container">
-        <a href="https://rs.school/js/" target="_blank">
-            <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School">
-        </a>
+    <div class="container footer-row">
+        <div id="contacts">
+            <a class="contact-link" href="mailto:svetlenkajas@gmail.com">
+                <img src="./assets/svg/email.svg" width="32" height="32" alt="Email">
+            </a>
+            <a class="contact-link" href="https://github.com/Svetlenkaja">
+                <img src="./assets/svg/github.svg" width="32" height="32" alt="GitHub">
+            </a>
+            <a class="contact-link" href="https://t.me/svetlenkajas">
+                <img src="./assets/svg/telegram.svg" width="32" height="32" alt="Telegram">
+            </a>
+        </div>
+        <div>
+            <p>© 2023 by Sviatlana Koshel</p>
+        </div>
+        <div>
+            <a href="https://rs.school/js/" target="_blank">
+                <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School">
+            </a>
+        </div>
     </div>
 </footer>
 
