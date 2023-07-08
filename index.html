@@ -7,58 +7,71 @@
     <title>CV</title>
 </head>
 <body>
-<header>
-    <div class="container">
-<p>
-
-</p>
-    </div>
-
+<header class="header">
+    <nav class="container">
+        <ul class="nav-list">
+            <li>
+                <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#about_me">About me</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#english">English</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <main>
     <div class="container">
         <section class="section" id="profile">
-            <div>
-                <img id="myfoto" src="./assets/img/foto.jpg" alt="profile-photo">
+            <div class="div-left odd-div-left">
+                <img class="profile-logo" id="myfoto" src="./assets/img/foto.jpg" alt="profile-photo">
             </div>
-            <div>
-                <h1>SVIATLANA KOSHEL</h1>
-                <div>
+            <div class="div-right">
+                <h1 class="title">SVIATLANA KOSHEL</h1>
+                <div class="sub-title">
                     Backend Java Developer
                 </div>
             </div>
         </section>
         <section class="section" id="contacts">
-            <div>
+            <div class="div-left even-div-left">
                 <h2>Contacts</h2>
             </div>
-            <div class="box-row">
-                <div>
-                    Location
-                    <p>Minsk, Belarus</p>
+            <div class="div-right even-div-right box-row texting">
+                <div class="column-width">
+                    <h3>Location</h3>
+                    Minsk, Belarus
                 </div>
-                <div>
-                    Email
-                    <p><a href="mailto:svetlenkajas@gmail.com">Svetlenkajas@gmail.com</a></p>
+                <div class="column-width">
+                    <h3>Email</h3>
+                    <a class="contact-link" href="mailto:svetlenkajas@gmail.com">Svetlenkajas@gmail.com</a>
                 </div>
             </div>
         </section>
         <section class="section" id="about_me">
-            <div>
+            <div class="div-left odd-div-left">
                 <h2>About Me</h2>
             </div>
-            <div>
-                <p>I am backend developer. I like to learn programming and write beautiful code.
-                    I want to learn technologies and tools for frontend development and in the future, I want to become
-                    a full-stack developer.
-                    In the pastime, I’m fond of playing badminton.</p>
+            <div class="div-right texting">
+                I am backend developer. I like to learn programming and write beautiful code.
+                I want to learn technologies and tools for frontend development and in the future,
+                I want to become a full-stack developer.
+                In the pastime, I’m fond of playing badminton.
             </div>
         </section>
         <section class="section" id="skills">
-            <div>
+            <div class="div-left even-div-left">
                 <h2>Skills</h2>
             </div>
-            <div>
+            <div class="div-right even-div-right texting">
                 <ul>
                     <li>Java</li>
                     <li>SQL/PLSQL</li>
@@ -71,10 +84,10 @@
             </div>
         </section>
         <section class="section" id="code">
-            <div>
+            <div class="div-left odd-div-left">
                 <h2>Code example</h2>
             </div>
-            <div>
+            <div class="div-right">
                 <pre>
         # BEGIN
         def compare_versions(ver1, ver2)
@@ -88,16 +101,16 @@
             </div>
         </section>
         <section class="section" id="education">
-            <div>
+            <div class="div-left even-div-left">
                 <h2>Education</h2>
             </div>
-            <div class="box-row">
-                <div>
-                    <h3>University:</h3>
+            <div class="div-right even-div-right box-row texting">
+                <div class="column-width">
+                    <h3>University</h3>
                     BSUIR, Software Information Technology
                 </div>
-                <div>
-                    <h3>Courses:</h3>
+                <div class="column-width">
+                    <h3>Courses</h3>
                     <ul class="section-list texting">
                         <li class="section-item">IT-Academy - Java Enterprise</li>
                         <li class="section-item">BelSoft - Oracle 10g database administration</li>
@@ -109,17 +122,17 @@
             </div>
         </section>
         <section class="section" id="english">
-            <div>
+            <div class="div-left odd-div-left">
                 <h2>English</h2>
             </div>
-            <div>
+            <div class="div-right texting">
                 <p>At the moment my English level is A2, but I continue to study English. I want to be fluent in
                     English. </p>
             </div>
         </section>
     </div>
 </main>
-<footer>
+<footer class="footer">
     <div class="container">
         <a href="https://rs.school/js/" target="_blank">
             <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School">

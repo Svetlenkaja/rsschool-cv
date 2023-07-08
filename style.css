@@ -1,3 +1,14 @@
+:root {
+    --main-color-one: #14274E;
+    --main-color-two: #173061;
+    --title: #5683c7;
+    --nav-link: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     margin: 0;
@@ -5,30 +16,114 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    border: 1px solid red;
 }
 
 main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
 }
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
 }
 
 .section {
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
 }
 
 .box-row {
     display: flex;
     flex-direction: row;
     justify-content: left;
+}
+
+.column-width {
+    flex: 35%
+}
+
+.div-left {
+    width: 25%;
+    text-align: right;
+    /*border: 1px solid red;*/
+    padding: 20px;
+    color: white;
+}
+
+.div-right {
+    width: 75%;
+    padding: 20px;
+}
+
+.header {
+    background: var(--main-color-two);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--main-color-two);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--nav-link);
+}
+
+.profile-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.odd-div-left {
+    background: var(--main-color-one);
+}
+
+.even-div-left {
+    background: var(--main-color-two);
+}
+
+.even-div-right {
+    background: lightsteelblue;
+}
+
+.title {
+    text-align: center;
+    color: var(--main-color-one);
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.sub-title {
+    text-align: center;
+    color: var(--main-color-two);
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.texting {
+    font-size: 18px;
+    color: var(--main-color-one);
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--main-color-one);
 }
