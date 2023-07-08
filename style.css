@@ -40,11 +40,17 @@ main {
     justify-content: left;
 }
 
-.footer-row {
+.header {
+    background: var(--main-color-two);
+}
+
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px;
+    background: var(--box-color);
+    color: white;
 }
 
 .column-width {
@@ -54,22 +60,13 @@ main {
 .div-left {
     width: 25%;
     text-align: right;
-    padding: 20px;
+    padding: 10px 20px;
     color: white;
 }
 
 .div-right {
     width: 75%;
-    padding: 20px;
-}
-
-.header {
-    background: var(--main-color-two);
-}
-
-.footer {
-    background: var(--box-color);
-    color: white;
+    padding: 10px 20px;
 }
 
 .nav-list {
