@@ -2,9 +2,197 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
 </head>
 <body>
+<header>
+    <nav class="container header">
+        <ul class="nav-list">
+            <li>
+                <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#about_me">About me</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#code">Code example</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#english">English</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <section class="section" id="profile">
+            <div class="div-left odd-div-left">
+                <img class="profile-logo" id="myfoto" src="./assets/img/foto.jpg" alt="profile-photo">
+            </div>
+            <div class="div-right">
+                <div>
+                    <h1 class="title">SVIATLANA KOSHEL</h1>
+                    <div class="sub-title">
+                        Backend Java Developer
+                    </div>
+                </div>
+                <div class="texting">
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            Minsk, Belarus
+                        </li>
+                        <li class="contacts-item">
+                            +375 29 697 XX XX
+                        </li>
+                        <li class="contacts-item">
+                            <a class="link" href="mailto:svetlenkajas@gmail.com">Email</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about_me">
+            <div class="div-left even-div-left">
+                <h2>About Me</h2>
+            </div>
+            <div class="div-right even-div-right texting">
+                I am backend developer. I like to learn programming and write beautiful code.
+                I want to learn technologies and tools for frontend development and in the future,
+                I want to become a full-stack developer.
+                In the pastime, I’m fond of playing badminton.
+            </div>
+        </section>
+        <section class="section" id="skills">
+            <div class="div-left odd-div-left">
+                <h2>Skills</h2>
+            </div>
+            <div class="div-right texting">
+                <ul>
+                    <li>Java, Spring, Spring Boot, Spring Data, Hibernate, Jasper Report</li>
+                    <li>SQL/PLSQL</li>
+                    <li>Oracle database administration</li>
+                    <li>Ruby/Ruby on Rails</li>
+                    <li>GIT, SVN</li>
+                    <li>Delphi, FastReport</li>
+                    <li>Умение читать и анализировать чужой код</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section" id="code">
+            <div class="div-left even-div-left">
+                <h2>Code example</h2>
+            </div>
+            <div class="div-right even-div-right texting">
+                <pre>
+    # BEGIN
+    def fizz_buzz(start, stop)
+      str = ''
+      return str if stop &lt; start
 
+      start.upto stop do |i|
+        str = "#{str} " if i != start
+        st = ''
+        if (i % 3 != 0) && (i % 5 != 0)
+          st = i.to_s
+        else
+          st = (i % 3).zero? ? 'Fizz' : ''
+          st += (i % 5).zero? ? 'Buzz' : ''
+        end
+        str = "#{str}#{st}"
+      end
+      str
+    end
+    # END
+                </pre>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="div-left odd-div-left">
+                <h2>Projects</h2>
+            </div>
+            <div class="div-right texting">
+                <ul>
+                    <li>Design and creation of an automated system for operational accounting of works and services of
+                        the enterprise: ordering, cost calculation, documentary support for the execution of orders,
+                        preparation of final reporting. (Delphi, FastReport, Oracle, PLSQL)
+                    </li>
+                    <li>Design and creation of an IT department automation system based on ITSM practices. (Delphi,
+                        FastReport, Oracle, PLSQL)
+                    </li>
+                    <li><a class="link" href="https://github.com/Svetlenkaja/rails-project-lvl1/">Educational project
+                        "Form Generator".</a></li>
+                    <li><a class="link" href="https://github.com/Svetlenkaja/travel-agency">Educational project "Travel
+                        agency"</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section" id="education">
+            <div class="div-left even-div-left">
+                <h2>Education</h2>
+            </div>
+            <div class="div-right even-div-right box-row texting">
+                <div class="column-width">
+                    <h3>University</h3>
+                    I graduated from the Belarusian State University of Informatics and Radioelectronics with a
+                    specialty software information technology.
+                </div>
+                <div class="column-width">
+                    <h3>Courses</h3>
+                    <ul class="texting courses-list">
+                        <li><a class="link"
+                               href="https://www.it-academy.by/course/java-developer/jd2-tekhnologii-razrabotki-enterprise-resheniy-na-java">
+                            Technologies for developing enterprise solutions in Java</a></li>
+                        <li><a class="link" href="https://ru.hexlet.io/programs/rails">Ruby Developer</a></li>
+                        <li>Develop PL/SQL Program Units</li>
+                        <li>Oracle 10g database administration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="english">
+            <div class="div-left odd-div-left">
+                <h2>English</h2>
+            </div>
+            <div class="div-right texting">
+                <p>At the moment my English level is A2, but I continue to study English. I want to be fluent in
+                    English. </p>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="container footer">
+        <div id="contacts">
+            <a class="contact-link" href="mailto:svetlenkajas@gmail.com">
+                <img src="./assets/svg/email.svg" width="32" height="32" alt="Email">
+            </a>
+            <a class="contact-link" href="https://github.com/Svetlenkaja">
+                <img src="./assets/svg/github.svg" width="32" height="32" alt="GitHub">
+            </a>
+            <a class="contact-link" href="https://t.me/svetlenkajas">
+                <img src="./assets/svg/telegram.svg" width="32" height="32" alt="Telegram">
+            </a>
+        </div>
+        <div>
+            <p>© 2023 by Sviatlana Koshel</p>
+        </div>
+        <div>
+            <a href="https://rs.school/js/" target="_blank">
+                <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School">
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

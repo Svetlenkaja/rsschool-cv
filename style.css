@@ -1,3 +1,189 @@
-h1 {
-    color: navy;
+:root {
+    --main-color: #14274E;
+    --nav-color: #32508c;
+    --footer-color: #cedff3;
+    --link-color: #5683c7;
+    --nav-link-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: var(--nav-color);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background: var(--footer-color);
+    color: white;
+}
+
+.column-width {
+    flex: 35%
+}
+
+.div-left {
+    width: 25%;
+    text-align: right;
+    padding: 10px 20px;
+    color: white;
+}
+
+.div-right {
+    width: 75%;
+    padding: 10px 20px;
+}
+
+.nav-link {
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--nav-link-color);
+}
+
+.profile-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.odd-div-left {
+    background: var(--main-color);
+}
+
+.even-div-left {
+    background: var(--nav-color);
+}
+
+.even-div-right {
+    background: var(--footer-color);
+}
+
+.title {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin: 20px;
+}
+
+.sub-title {
+    text-align: center;
+    color: var(--nav-color);
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.texting {
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.contacts-item {
+    position: relative;
+    flex: 35%;
+    margin: 20px 15px;
+    padding-left: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--nav-color);
+}
+
+.contacts-item:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts-item:nth-child(1):before {
+    background-image: url(./assets/svg/location.svg);
+}
+
+.contacts-item:nth-child(2):before {
+    background-image: url(./assets/svg/phone.svg);
+}
+
+.contacts-item:nth-child(3):before {
+    background-image: url(./assets/svg/email.svg);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+.link:hover {
+    color: blue;
+}
+
+.courses-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-link {
+    text-decoration: none;
+    padding: 0 20px;
 }
