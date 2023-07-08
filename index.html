@@ -2,9 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
 </head>
 <body>
+<header>
+    <div class="container">
+<p>
+
+</p>
+    </div>
+
+</header>
+<main>
+    <div class="container">
+        <section class="section" id="profile">
+            <div>
+                <img id="myfoto" src="./assets/img/foto.jpg" alt="profile-photo">
+            </div>
+            <div>
+                <h1>SVIATLANA KOSHEL</h1>
+                <div>
+                    Backend Java Developer
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contacts">
+            <div>
+                <h2>Contacts</h2>
+            </div>
+            <div class="box-row">
+                <div>
+                    Location
+                    <p>Minsk, Belarus</p>
+                </div>
+                <div>
+                    Email
+                    <p><a href="mailto:svetlenkajas@gmail.com">Svetlenkajas@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about_me">
+            <div>
+                <h2>About Me</h2>
+            </div>
+            <div>
+                <p>I am backend developer. I like to learn programming and write beautiful code.
+                    I want to learn technologies and tools for frontend development and in the future, I want to become
+                    a full-stack developer.
+                    In the pastime, I’m fond of playing badminton.</p>
+            </div>
+        </section>
+        <section class="section" id="skills">
+            <div>
+                <h2>Skills</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>Java</li>
+                    <li>SQL/PLSQL</li>
+                    <li>Oracle database administration</li>
+                    <li>Ruby/Ruby on Rails</li>
+                    <li>GIT, SVN</li>
+                    <li>Delphi, FastReport</li>
+                    <li>Умение читать и анализировать чужой код</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section" id="code">
+            <div>
+                <h2>Code example</h2>
+            </div>
+            <div>
+                <pre>
+        # BEGIN
+        def compare_versions(ver1, ver2)
+            array1 = ver1.split('.')
+            array2 = ver2.split('.')
+            index = array1[0].to_i == array2[0].to_i ? 1 : 0
+            array1[index].to_i <=> array2[index].to_i
+        end
+        # END
+                </pre>
+            </div>
+        </section>
+        <section class="section" id="education">
+            <div>
+                <h2>Education</h2>
+            </div>
+            <div class="box-row">
+                <div>
+                    <h3>University:</h3>
+                    BSUIR, Software Information Technology
+                </div>
+                <div>
+                    <h3>Courses:</h3>
+                    <ul class="section-list texting">
+                        <li class="section-item">IT-Academy - Java Enterprise</li>
+                        <li class="section-item">BelSoft - Oracle 10g database administration</li>
+                        <li class="section-item">CompIT Technologies - PL/SQL</li>
+                        <li class="section-item">Hexlet.io - Ruby Developer</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="english">
+            <div>
+                <h2>English</h2>
+            </div>
+            <div>
+                <p>At the moment my English level is A2, but I continue to study English. I want to be fluent in
+                    English. </p>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <a href="https://rs.school/js/" target="_blank">
+            <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School">
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>
