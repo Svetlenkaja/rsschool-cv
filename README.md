@@ -1,2 +1,2 @@
 # rsschool-cv
-RSSchool
+[My CV](https://Svetlenkaja.github.io/rsschool-cv/cv)
