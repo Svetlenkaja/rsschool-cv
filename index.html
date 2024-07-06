@@ -1,10 +1,207 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
 </head>
 <body>
+<header>
+    <nav class="container header">
+        <ul class="nav__list">
+            <li>
+                <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+            <li>
+                <a class="nav__link" href="#about_me">About me</a>
+            </li>
+            <li>
+                <a class="nav__link" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="nav__link" href="#code">Code example</a>
+            </li>
+            <li>
+                <a class="nav__link" href="#projects">Projects</a>
+            </li>
+            <li>
+                <a class="nav__link" href="#education">Education</a>
+            </li>
+            <li>
+                <a class="nav__link" href="#courses">Courses</a>
+            </li>
+            <li>
+                <a class="nav__link" href="#english">English</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <section class="section" id="profile">
+            <div class="flex-row">
+                <div class="panel__foto">
+                    <img class="profile__logo" id="myfoto" src="./assets/img/foto.jpg" alt="profile-photo">
+                </div>
+                <div class="panel__right panel__title">
+                    <div>
+                        <h1 class="title">SVIATLANA KOSHEL</h1>
+                        <div class="sub__title">
+                            Backend Java Developer
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="content">
+            <div class="panel__left">
+                <div class="texting" id="contacts">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            Minsk, Belarus
+                        </li>
+                        <li class="contacts__item">
+                            +375 29 697 XX XX
+                        </li>
+                        <li class="contacts__item">
+                            <a class="link" href="mailto:svetlenkajas@gmail.com">Email</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="link" href="https://t.me/svetlenkajas">@svetlenkajas</a>
+                        </li>
+                    </ul>
+                </div>
+                <section class="section" id="skills">
+                    <div class="section__title">
+                        <h2>SKILLS</h2>
+                    </div>
+                    <div class="texting">
+                        <ul class="list">
+                            <li>Java, Spring, Spring Boot, Spring Data, Hibernate, Jasper Report</li>
+                            <li>SQL/PLSQL</li>
+                            <li>DBA Oracle</li>
+                            <li>GIT, SVN</li>
+                            <li>Delphi, FastReport</li>
+                            <li>Умение читать и анализировать чужой код</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section" id="education">
+                    <div class="section__title">
+                        <h2>EDUCATION</h2>
+                    </div>
+                    <div class="texting">
+                        Belarusian State University of Informatics and Radioelectronics                
+                    </div>
+                </section> 
+                <section class="section" id="Courses">
+                    <div class="section__title">
+                        <h2>COURSES</h2>
+                    </div>
+                    <div class="texting ">
+                        <ul class="courses__list">
+                            <li><a class="link"
+                                    href="https://www.it-academy.by/course/java-developer/jd2-tekhnologii-razrabotki-enterprise-resheniy-na-java">
+                                Technologies for developing enterprise solutions in Java</a></li>
+                            <li><a class="link" href="https://ru.hexlet.io/programs/rails">Ruby Developer</a></li>
+                            <li>Develop PL/SQL Program Units</li>
+                            <li>Oracle 10g database administration</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section" id="english">
+                    <div class="section__title">
+                        <h2>ENGLISH</h2>
+                    </div>
+                    <div class="texting">
+                        <p>At the moment my English level is A2, but I continue to study English. I want to be fluent in
+                            English. </p>
+                    </div>
+                </section>
+            </div>
+            <div class="panel__right">
+                <section class="section" id="about_me">
+                    <div class="section__title">
+                        <h2>ABOUT ME</h2>
+                    </div>
+                    <div class="texting">
+                        I am backend developer. I like to learn programming and write beautiful code.
+                        I want to learn technologies and tools for frontend development and in the future,
+                        I want to become a full-stack developer.
+                        In the pastime, I’m fond of playing badminton.
+                    </div>
+                </section> 
+                <section class="section" id="code">
+                    <div class="section__title">
+                        <h2>CODE EXAMPLE</h2>
+                    </div>
+                    <div class="texting">
+                        <pre>
+            # BEGIN
+            def fizz_buzz(start, stop)
+              str = ''
+              return str if stop &lt; start
+        
+              start.upto stop do |i|
+                str = "#{str} " if i != start
+                st = ''
+                if (i % 3 != 0) && (i % 5 != 0)
+                  st = i.to_s
+                else
+                  st = (i % 3).zero? ? 'Fizz' : ''
+                  st += (i % 5).zero? ? 'Buzz' : ''
+                end
+                str = "#{str}#{st}"
+              end
+              str
+            end
+            # END
+                        </pre>
+                    </div>
+                </section>
+                <section class="section" id="projects">
+                    <div class="section__title">
+                        <h2>PROJECTS</h2>
+                    </div>
+                    <div class="texting list__item">
+                        <ul>
+                            <li><a class="link" href="https://github.com/Svetlenkaja/rails-project-lvl1/">Educational project
+                                "Form Generator".</a></li>
+                            <li><a class="link" href="https://github.com/Svetlenkaja/travel-agency">Educational project "Travel
+                                agency"</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://github.com/Svetlenkaja/frontend-project-11">Educational project «Rss Aggregator»</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://github.com/Svetlenkaja/frontend-project-46">Educational project "Difference generator"</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container footer">
+        <div class="footer__left">
+            <a class="link" href="https://github.com/Svetlenkaja">
+                <img src="./assets/svg/github.svg" width="32" height="32" alt="GitHub">
+            </a>
+        </div>
+        <div>
+            <p>© 2024 by Sviatlana Koshel</p>
+        </div>
+        <div class="footer__right">
+            <a href="https://rs.school/js/" target="_blank">
+                <img src="./assets/svg/rs_school_js.svg" width="86" height="32" alt="RS School">
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
