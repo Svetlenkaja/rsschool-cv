@@ -13,9 +13,9 @@
 :root {
   --main-color: #14274E;
   --nav-color: #32508c;
-  --footer-color: #cedff3;
+  --panel-color: #cedff3;
   --link-color: #5683c7;
-  --nav-link-color: #fff;
+  --title-color: #fff;
 }
 
 * {
@@ -49,7 +49,7 @@ h2 {
 .section {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .header {
@@ -59,7 +59,7 @@ h2 {
   background: var(--nav-color);
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   align-items: center;
   list-style: none;
@@ -67,11 +67,11 @@ h2 {
   font-weight: 400;
 }
 
-.nav-link {
+.nav__link {
   padding: 0 15px;
   text-decoration: none;
   font-size: 20px;
-  color: var(--nav-link-color);
+  color: var(--title-color);
 }
 
 .footer {
@@ -79,11 +79,23 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   padding: 5px;
-  background: var(--footer-color);
+  background: var(--nav-color);
   color: white;
 }
 
-.profile-logo {
+.footer__left,
+.footer__right {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel__foto {
+  width: 35%;
+}
+
+.profile__logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -100,7 +112,7 @@ h2 {
   margin: 20px;
 }
 
-.sub-title {
+.sub__title {
   text-align: center;
   color: var(--nav-color);
   line-height: 50px;
@@ -109,20 +121,25 @@ h2 {
   letter-spacing: 2px;
 }
 
+.content {
+  display: flex;
+  margin-top: 30px;
+}
+
 .texting {
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.5;
   color: var(--main-color);
   padding: 10px;
   text-align: justify;
 }
 
-.contacts-list {
+.contacts__list {
   line-height: 2.0;
   list-style: none;
 }
 
-.contacts-item {
+.contacts__item {
   position: relative;
   flex: 35%;
   margin: 20px 15px;
@@ -132,7 +149,7 @@ h2 {
   color: var(--nav-color);
 }
 
-.contacts-item:before {
+.contacts__item:before {
   content: "";
   position: absolute;
   top: -5px;
@@ -143,56 +160,50 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.contacts-item:nth-child(1):before {
+.contacts__item:nth-child(1):before {
   background-image: url(./assets/svg/location.svg);
-}
+} 
 
-.contacts-item:nth-child(2):before {
-  background-image: url(./assets/svg/phone.svg);
-}
+.contacts__item:nth-child(2):before {
+  background-image: url(./assets/svg/mobile.svg);
+} 
 
-.contacts-item:nth-child(3):before {
-  background-image: url(./assets/svg/email.svg);
+.contacts__item:nth-child(3):before {
+  background-image: url(./assets/svg/at.svg);
+}
+.contacts__item:nth-child(4):before {
+  background-image: url(./assets/svg/telegram.svg);
 }
 
 .link {
   text-decoration: none;
-  color: var(--nav-color);
+  color: var(--main-color);
 }
 
 .link:hover {
   color: blue;
 }
 
-.courses-list {
+.courses__list {
   list-style: none;
   padding: 0;
 }
 
-.contact-link {
-  text-decoration: none;
-  padding: 0 20px;
-}
-
-.content {
-  display: flex;
-}
-
-.panel-left {
+.panel__left {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
   padding: 10px;
-  background-color: var(--footer-color);
-  color: var(--nav-link-color);
+  background-color: var(--panel-color);
+  color: var(--title-color);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
-.panel-right {
+.panel__right {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 65%;
   padding: 20px;
 }
 
@@ -200,13 +211,33 @@ h2 {
   display: flex;
 }
 
-.panel-foto {
-
-}
-
 .section__title {
   background: var(--nav-color);
-  color: var(--nav-link-color);
+  color: var(--title-color);
   border-radius: 13px;
+
+;
+}
+.section__title h2 {
   text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 400
+}
+
+.panel__title {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__item {
+  font-size: 22px;
+  line-height: 2.0;
+}
+
+.list {
+  padding-left: 20px;
 }
