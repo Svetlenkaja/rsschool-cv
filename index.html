@@ -147,7 +147,7 @@
               start.upto stop do |i|
                 str = "#{str} " if i != start
                 st = ''
-                if (i % 3 != 0) && (i % 5 != 0)
+                if (i % 3 != 0) &amp;&amp; (i % 5 != 0)
                   st = i.to_s
                 else
                   st = (i % 3).zero? ? 'Fizz' : ''
@@ -167,10 +167,11 @@
                     </div>
                     <div class="texting list__item">
                         <ul>
-                            <li><a class="link" href="https://github.com/Svetlenkaja/rails-project-lvl1/">Educational project
-                                "Form Generator".</a></li>
-                            <li><a class="link" href="https://github.com/Svetlenkaja/travel-agency">Educational project "Travel
-                                agency"</a>
+                            <li>
+                                <a class="link" href="https://github.com/Svetlenkaja/rails-project-lvl1/">Educational project "Form Generator"</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://github.com/Svetlenkaja/travel-agency">Educational project "Travel agency"</a>
                             </li>
                             <li>
                                 <a class="link" href="https://github.com/Svetlenkaja/frontend-project-11">Educational project «Rss Aggregator»</a>
